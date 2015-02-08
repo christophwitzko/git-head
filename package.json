@@ -1,0 +1,32 @@
+{
+  "name": "git-head",
+  "version": "0.0.0",
+  "description": "finds the hash of the HEAD reference",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test | tap-spec",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christophwitzko/git-head.git"
+  },
+  "keywords": [
+    "git",
+    "hash",
+    "HEAD"
+  ],
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christophwitzko/git-head/issues"
+  },
+  "homepage": "https://github.com/christophwitzko/git-head",
+  "devDependencies": {
+    "semantic-release": "^3.0.2",
+    "standard": "*",
+    "tap-spec": "^2.2.1",
+    "tape": "^3.5.0"
+  }
+}
