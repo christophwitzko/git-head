@@ -38,3 +38,13 @@ test('get-head hash', function (t) {
     })
   })
 })
+
+test('get-head after garbage collection', function (t) {
+  t.plan(2)
+  exec('git gc', function () {
+    gitHead(function (err, hash) {
+      t.error(err, 'error')
+      t.equal(hash, lastHash, 'hash')
+    })
+  })
+})
