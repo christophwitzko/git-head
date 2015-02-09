@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "finds the hash of the HEAD reference",
   "main": "index.js",
+  "bin": {
+    "git-head": "./bin/git-head.js"
+  },
   "scripts": {
     "test": "standard && node test | tap-spec",
     "prepublish": "semantic-release pre",
