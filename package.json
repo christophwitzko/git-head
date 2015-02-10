@@ -31,5 +31,8 @@
     "standard": "*",
     "tap-spec": "^2.2.1",
     "tape": "^3.5.0"
+  },
+  "dependencies": {
+    "git-refs": "^1.1.0"
   }
 }
