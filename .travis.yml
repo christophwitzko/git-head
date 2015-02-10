@@ -1,13 +1,13 @@
 language: node_js
 node_js:
- - iojs-v1
+- iojs-v1
 sudo: false
 env:
   global:
     secure: cqs5yx47rt12rMW+AKhGJl/qYWhujS+pn+L11bzuGZ9uYkSMTDyXBCo9aa2UiJtIbarcUPPE+6xxELS7GLYNRqTRAdq1hmtpctFIF5PB+REMvpWCw5WYNZ/+C98Nyf4OpMYb4G5YGIsJ7o58HRQYZeA4Haa2bUMvcydvWBn0fXw=
 cache:
   directories:
-   - node_modules
+  - node_modules
 notifications:
   email: false
 deploy:
