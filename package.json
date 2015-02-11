@@ -33,6 +33,6 @@
     "tape": "^3.5.0"
   },
   "dependencies": {
-    "git-refs": "^1.1.1"
+    "git-refs": "^1.1.2"
   }
 }
