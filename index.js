@@ -12,6 +12,6 @@ module.exports = function (root, cb) {
 
   gitRefs(root, function (err, data) {
     if (err) return cb(err)
-    cb(null, data['HEAD'])
+    cb(null, data.get('HEAD'))
   })
 }
