@@ -1,21 +1,18 @@
-language: node_js
-node_js:
-- iojs-v1
 sudo: false
-env:
-  global:
-    secure: cqs5yx47rt12rMW+AKhGJl/qYWhujS+pn+L11bzuGZ9uYkSMTDyXBCo9aa2UiJtIbarcUPPE+6xxELS7GLYNRqTRAdq1hmtpctFIF5PB+REMvpWCw5WYNZ/+C98Nyf4OpMYb4G5YGIsJ7o58HRQYZeA4Haa2bUMvcydvWBn0fXw=
+language: node_js
 cache:
   directories:
-  - node_modules
+    - node_modules
 notifications:
   email: false
-deploy:
-  provider: npm
-  email: npm@christophwitzko.com
-  skip_cleanup: true
-  api_key:
-    secure: fzCgFHDLnRQBxGVS3+Es4bPLOdoa0mutsEjqrkQMX/16E0FcHbpIeDwKt1biY2RpI0TT+5l8zSubdKZRqaUyDarwT6+tU7MV72pSjc/niXQha+z75epBo9d9ijEjvsTTzeIG8RluBy9i+I+qMzdAZrZqHRe4Rsrjr/0+kMEZauI=
-  on:
-    branch: master
-    repo: christophwitzko/git-head
+node_js:
+  - '4'
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^vd+.d+.d+$/
