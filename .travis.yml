@@ -15,4 +15,4 @@ after_success:
   - npm run semantic-release
 branches:
   except:
-    - /^vd+.d+.d+$/
+    - /^v\d+\.\d+\.\d+$/
