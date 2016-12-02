@@ -2,7 +2,7 @@
 
 var exec = require('child_process').exec
 
-var test = require('tape')
+var test = require('tap').test
 
 var gitHead = require('./')
 

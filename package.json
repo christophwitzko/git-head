@@ -1,36 +1,42 @@
 {
   "name": "git-head",
   "description": "finds the hash of the HEAD reference",
-  "main": "index.js",
+  "version": "0.0.0-development",
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
   "bin": {
     "git-head": "./bin/git-head.js"
   },
-  "scripts": {
-    "test": "standard && node test | tap-spec",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  "bugs": {
+    "url": "https://github.com/christophwitzko/git-head/issues"
   },
+  "dependencies": {
+    "git-refs": "^1.1.3"
+  },
+  "devDependencies": {
+    "nyc": "^10.0.0",
+    "semantic-release": "^6.3.2",
+    "standard": "^8.5.0",
+    "tap": "^8.0.1"
+  },
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "homepage": "https://github.com/christophwitzko/git-head",
+  "keywords": [
+    "HEAD",
+    "git",
+    "hash"
+  ],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/christophwitzko/git-head.git"
   },
-  "keywords": [
-    "git",
-    "hash",
-    "HEAD"
-  ],
-  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/christophwitzko/git-head/issues"
-  },
-  "homepage": "https://github.com/christophwitzko/git-head",
-  "devDependencies": {
-    "semantic-release": "^6.3.2",
-    "standard": "^8.5.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.5.1"
-  },
-  "dependencies": {
-    "git-refs": "^1.1.3"
+  "scripts": {
+    "pretest": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "nyc tap --no-cov test.js"
   }
 }
