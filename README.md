@@ -1,7 +1,6 @@
 # git-head
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/christophwitzko/git-head.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/christophwitzko/git-head.svg)](https://travis-ci.org/christophwitzko/git-head)
+[![CI](https://github.com/christophwitzko/git-head/workflows/CI/badge.svg?branch=master)](https://github.com/christophwitzko/git-head/actions?query=workflow%3ACI+branch%3Amaster)
 
 ## Install
 
